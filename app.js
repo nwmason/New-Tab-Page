@@ -1,7 +1,7 @@
-const searchBox = document.getElementById('search-box');
+const osrsWikiSearch = document.getElementById('osrs-wiki-search');
 
-searchBox.addEventListener('keypress', function(e) {
-    const query = searchBox.value;
+osrsWikiSearch.addEventListener('keypress', function(e) {
+    const query = osrsWikiSearch.value;
     const website = "https://oldschool.runescape.wiki/?search=";
     const searchUrl = website + query;
 
