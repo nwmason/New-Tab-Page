@@ -1,4 +1,4 @@
-#A Custom New Tab Page
+A Custom New Tab Page
 
 I hate Firefox's new tab page. This is my solution to it.
 
