@@ -83,6 +83,7 @@ a {
 
 .nav-tile:hover {
     cursor: pointer;
+    transition: 0.2s;
 
     border: 2px solid var(--main-sidebar-color);
     outline: 6px solid var(--accent-green);
@@ -94,7 +95,8 @@ a {
 
     padding-bottom: 8px;
 }
-.nav-tile:active {
+
+.nav-tile:focus-within {
     outline: 6px solid var(--accent-orange);
 }
 
@@ -144,4 +146,8 @@ a {
 
     outline: 5px solid var(--accent-green);
     background-color: #464c59;
+}
+
+.content-list-item:focus-within {
+    outline: 5px solid var(--accent-orange);
 }
