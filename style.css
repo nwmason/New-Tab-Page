@@ -11,7 +11,8 @@
 
     --accent-green: #27ae60;
     --accent-orange: #E4572E;
-    --accent-light-green: #A3EBC1;
+    --accent-light-green: #a9dfbf;
+    --accent-light-orange: #f4bcab;
 }
 
 body {
@@ -162,6 +163,7 @@ a {
 
     outline: 1.5px solid var(--tile-outline);
     color: var(--font-color);
+    transition: 0.12s;
 }
 
 .content-list-item:hover {
@@ -176,6 +178,7 @@ a {
 
 .content-list-item:focus-within {
     outline: 5px solid var(--accent-orange);
+    color: var(--accent-light-orange);
 }
 
 .content-icon-container {
