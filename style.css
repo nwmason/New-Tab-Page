@@ -46,13 +46,14 @@ img {
 }
 
 input {
-    height: 36px;
-    font-size: 18px;
+    height: 48px;
+    font-size: 24px;
     padding: 12px;
     padding-left: 28px;
     border-radius: 12px;
     border: 3px solid var(--main-bg-color);
     outline: 3px solid var(--tile-outline);
+    color: var(--tile-outline);
 }
 
 input:focus {
@@ -133,8 +134,8 @@ a {
     flex-direction: column;
     justify-content: center;
 
-    padding-left: 256px;
-    padding-right: 256px;
+    padding-left: 212px;
+    padding-right: 212px;
     gap: 32px;
 
     background-color: var(--main-bg-color);
