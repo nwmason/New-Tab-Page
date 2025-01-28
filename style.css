@@ -135,10 +135,6 @@ a {
     animation: icon-shake 0.35s linear 0s 1;
 }
 
-.nav-icon:hover {
-    width: 0px;
-}
-
 .search-container {
     grid-row: 1 / 2;
 
