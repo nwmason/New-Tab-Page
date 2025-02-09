@@ -60,6 +60,7 @@ input {
     border: 3px solid var(--main-bg-color);
     outline: 3px solid var(--tile-outline);
     color: var(--tile-outline);
+    background-color: var(--font-color);
 }
 
 input:focus {
@@ -69,7 +70,20 @@ input:focus {
 
 a {
     text-decoration: none;
+    transition: 0.2s;
     color: inherit;
+}
+
+a:hover {
+    color: var(--accent-green);
+}
+
+a:focus {
+    color: var(--accent-orange);
+}
+
+li {
+  list-style-type: none;  
 }
 
 .sidebar {
@@ -137,13 +151,11 @@ a {
 
 .header {
     user-select: none;
-    box-sizing: con-box;
+    box-sizing: border-box;
 
     display: grid;
-    align-items: center;
-    margin: 0;
-
-    padding-left: 64px;
+    grid-template-columns: 18fr 2fr;
+    padding: 0 48px 0 64px;
     min-height: 64px;
 
     background-color: var(--navtile-color);
@@ -152,6 +164,87 @@ a {
     color: var(--tile-outline);
     font-size: 22px;
 }
+
+.news-menu {
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 10fr;
+    align-items: center;
+    text-align: center;
+
+}
+
+.news-item {
+    margin-right: 16px;
+    height: 100%;
+    color: var(--font-color);
+    box-sizing: border-box;
+    transition: 0.12s;
+}
+
+.news-item:hover {
+    border-bottom: 3px solid var(--accent-green);
+}
+
+.news-item:focus-within {
+    border-bottom: 3px solid var(--accent-orange);
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    fill: var(--tile-outline);
+    border-radius: 4px;
+    transition: 0.12s;
+}
+
+.hamburger-menu:hover {
+    fill: var(--accent-green);
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    padding: 12px;
+    height: 32px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--font-color);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 #00000088;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--main-sidebar-color);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown a:hover {
+    color: var(--accent-green);
+    background-color: #C2CCCD;
+}
+
+.dropdown a:focus {
+    color: var(--accent-orange);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .search-container {
     grid-row: 2 / 3;
