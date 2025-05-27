@@ -4,7 +4,7 @@ const osrsWikiSearch = document.getElementById('osrs-wiki-search');
 searchBox.addEventListener('keypress', function(e) {
     const query = searchBox.value.replaceAll(" ", "+");
     const website = "https://www.google.com/search?q=";
-    const searchUrl = website + query;
+    const searchUrl = website + query + "&udm=14";
 
     if (e.key === "Enter") {
         window.open(searchUrl, '_blank').focus();
