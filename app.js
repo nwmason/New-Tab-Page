@@ -7,7 +7,7 @@ searchBox.addEventListener('keypress', function(e) {
     const searchURL = website + query;
 
     if (e.key === "Enter") {
-        window.open(searchURL, '_blank').focus();
+        location.href = searchURL;
         searchBox.value = "";
     }
 })
@@ -18,7 +18,7 @@ osrsWikiSearch.addEventListener('keypress', function(e) {
     const searchURL = website + query;
 
     if (e.key === "Enter") {
-        window.open(searchURL, '_blank').focus();
+        location.href = searchURL;
         osrsWikiSearch.value = "";
     } 
 });
